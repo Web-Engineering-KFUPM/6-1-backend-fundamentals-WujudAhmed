@@ -6,3 +6,12 @@ import express from 'express';
 const app = express();
 
 app.use(cors());
+
+
+// TODO 3: Allow React to access the server
+import cors from 'cors';
+
+// TODO 5: Create the home route "/"
+app.get('/', (req, res) => {
+    res.send('Hello from the back-end server');
+  });
